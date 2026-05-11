@@ -3,8 +3,8 @@ require "json"
 class Wardex < Formula
   desc "AI-powered endpoint detection and response for XDR workflows"
   homepage "https://github.com/pinkysworld/Wardex"
-  url "https://github.com/pinkysworld/Wardex/archive/refs/tags/v1.0.10.tar.gz"
-  sha256 "fc44cd9936d37f8556116d60f61525137ff22b3a243ffa5e4ab0e6a22aef79d3"
+  url "https://github.com/pinkysworld/Wardex/archive/refs/tags/v1.0.11.tar.gz"
+  sha256 "7a7a03d34b42c6999f2427778b85237af4ab9847142dbf9c644b455891da5318"
   license "BUSL-1.1"
 
   depends_on "node" => :build if OS.mac?
