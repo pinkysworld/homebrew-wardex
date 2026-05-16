@@ -4,7 +4,7 @@ class Wardex < Formula
   desc "AI-powered endpoint detection and response for XDR workflows"
   homepage "https://github.com/pinkysworld/Wardex"
   url "https://github.com/pinkysworld/Wardex/archive/refs/tags/v1.0.20.tar.gz"
-  sha256 "0c041a5b546fcf047a93ff33c1e79f25d12ec381dd814e674eea98bb899bf772"
+  sha256 "80a60b18b351e3b11cd3a51b3984c00271169490b68f6a4bcda8d816f0c3e94d"
   license "BUSL-1.1"
 
   depends_on "node" => :build if OS.mac?
