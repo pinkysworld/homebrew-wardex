@@ -3,8 +3,8 @@ require "json"
 class Wardex < Formula
   desc "AI-powered endpoint detection and response for XDR workflows"
   homepage "https://github.com/pinkysworld/Wardex"
-  url "https://github.com/pinkysworld/Wardex/archive/refs/tags/v1.0.29.tar.gz"
-  sha256 "d0a4622af2bcb2df46867a127933f064f7571fa63a67c3a651044a486e38305c"
+  url "https://github.com/pinkysworld/Wardex/archive/refs/tags/v1.0.30.tar.gz"
+  sha256 "aff207a085b627a5800645fe56d7df1b9b979f10c2bd0899eef5e964e2e64007"
   license "AGPL-3.0-only"
 
   depends_on "node" => :build if OS.mac?
@@ -33,10 +33,10 @@ class Wardex < Formula
     doc.install "README.md", "LICENSE"
   end
 
-  def post_install
-    (var/"wardex").mkpath
-    (var/"wardex/backups").mkpath
-    (var/"log/wardex").mkpath
+  post_install_steps do
+    mkdir_p "wardex"
+    mkdir_p "wardex/backups"
+    mkdir_p "log/wardex"
   end
 
   service do
